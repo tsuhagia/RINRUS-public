@@ -37,9 +37,6 @@ which require
 - CMake >= 3.10
 - Any C/C++ compiler suite with C++11 support
 
-Current production-level use cases are described in `bin/`. The first public release (version 0.2) includes examples 1, 2, and 4 only!
-Examples 3 and 5 will be available soon.
-
 Currently, RINRUS can generate appropriate QM-cluster model input files for  
 -Gaussian09/Gaussian16  
 -the Gaussian-xTB wrapper developed by the Asparu-Guzik group (https://github.com/aspuru-guzik-group/xtb-gaussian)  
@@ -50,6 +47,9 @@ TODO:
 -write FSAPT and I/FSAPT input files in PSI4   
 -write ORCA and TURBOMOLE QM-cluster model input files  
 -automated network graph visualization of RINRUS models  
+
+Current production-level use cases are described in `bin/` with tutorials in bin/README.md  
+The first public release (version 0.2) includes examples 1, 2, and 4 only! Examples 3 and 5 will be available soon.  
 
 ## Usage example 1 - generating a single or a few input files with probe interaction count ranking 
 
@@ -64,5 +64,5 @@ TODO:
 ## Usage example 5b - Combinatorial model building from probe
 
 ## Contributors
-This code has been developed by the [DeYonker group](https://www.memphis.edu/chem/faculty-deyonker/index.php) at the University of Memphis Department of Chemistry. 
+This code has been developed by the [DeYonker group](https://www.memphis.edu/chem/faculty-deyonker/index.php) at the University of Memphis Department of Chemistry.  
 Dr. Qianyi Cheng is the primary coder, assisted by Prof. Nathan DeYonker, Dr. Thomas Summers (University of Nevada-Reno), Donatus Agbaglo, Tejas Suhagia, and Dr. Eric Berquist (Q-Chem, Inc.)
