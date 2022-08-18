@@ -1,0 +1,21 @@
+<<<<<<< HEAD:template_files/input_template/min_temp
+10 80
+=======
+10  120
+>>>>>>> c6676a993e7f1dfd35e054904d5928a0d63e4f16:template_files/min_temp
+b3lyp/gen
+opt 
+#freq
+#guess=read
+#geom=(checkpoint,step=10)
+#iop(1/8=1)
+scf=(xqc,maxcon=128,maxcyc=128)
+scrf(cpcm,read,solvent=water) EmpiricalDispersion=GD3BJ
+
+basis:
+S Mg     
+6-31G*
+****
+O N C H
+sto-3g
+****
