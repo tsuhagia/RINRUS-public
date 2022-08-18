@@ -9,7 +9,7 @@ Residue Interaction Network-based ResidUe Selector (RINRUS) is a QM-cluster mode
 Clone this repository, then add the library code under `lib3` to your `PYTHONPATH`. For example, in `~/git`:
 ``` bash
 cd ~/git
-git clone git@github.com:MiloCheng17/RINRUS.git
+git clone git@github.com:natedey/RINRUS-public.git
 export PYTHONPATH="~/git/RINRUS/lib3:$PYTHONPATH"
 ```
 
@@ -37,7 +37,7 @@ which require
 - CMake >= 3.10
 - Any C/C++ compiler suite with C++11 support
 
-Current production-level use cases are described in `bin/`.
+Current production-level use cases are described in `bin/`. Public release includes examples 1, 2, and 4 only!
 
 ## Usage example 1 - generating a single or a few input files with probe interaction count ranking 
 
