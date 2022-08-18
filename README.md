@@ -40,16 +40,16 @@ which require
 Current production-level use cases are described in `bin/`. The first public release (version 0.2) includes examples 1, 2, and 4 only!
 Examples 3 and 5 will be available soon.
 
-Currently, RINRUS can generate appropriate QM-cluster model input files for
--Gaussian09/Gaussian16
--the Gaussian-xTB wrapper developed by the Asparu-Guzik group (https://github.com/aspuru-guzik-group/xtb-gaussian)
--Q-Chem 5.x/6.x
+Currently, RINRUS can generate appropriate QM-cluster model input files for  
+-Gaussian09/Gaussian16  
+-the Gaussian-xTB wrapper developed by the Asparu-Guzik group (https://github.com/aspuru-guzik-group/xtb-gaussian)  
+-Q-Chem 5.x/6.x  
 
-TODO:
--write QM/MM input files with RINRUS-designed QM regions
--write FSAPT and I/FSAPT input files in PSI4 
--write ORCA and TURBOMOLE QM-cluster model input files
--automated network graph visualization of RINRUS models
+TODO:  
+-write QM/MM input files with RINRUS-designed QM regions  
+-write FSAPT and I/FSAPT input files in PSI4   
+-write ORCA and TURBOMOLE QM-cluster model input files  
+-automated network graph visualization of RINRUS models  
 
 ## Usage example 1 - generating a single or a few input files with probe interaction count ranking 
 
