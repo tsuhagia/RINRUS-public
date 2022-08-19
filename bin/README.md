@@ -45,19 +45,19 @@ This produces `freq_per_res.dat`, `rin_list.dat`, `res_atoms.dat`, and `*.sif`.
 
 9. With the res_atoms.dat file generated, use run rinrus_trim2_pdb to generate the trimmed PDB model:
 ```bash
-python3 ~/git/RINRUS/bin/rinrus_trim2_pdb.py -s A:300,A:301,A:302 -pdb 3bwm_h_modify.pdb 
+python3 ~/git/RINRUS/bin/rinrus_trim2_pdb.py -s A:300,A:301,A:302 -pdb 3bwm_h_modify.pdb -c res_atom.dat
 ```
 
 This generates automatically generate the entire "ladder" of possible models based on a ranking scheme which contain `res_NNN.pdb`, `res_NNN_froz_info.dat` and `res_NNN_atom_info.dat` for the all models, where `NNN` is the number of residues in that model.
 
 #Note: if you want to generate one model based on a any ranking scheme, you will need to use the flag `-model NNN`:
 ```bash
-python3 ~/git/RINRUS/bin/rinrus_trim2_pdb.py -s A:300,A:301,A:302 -pdb 3bwm_h_modify.pdb -model NNN
+python3 ~/git/RINRUS/bin/rinrus_trim2_pdb.py -s A:300,A:301,A:302 -pdb 3bwm_h_modify.pdb -c res_atom.dat -model NNN
 ```
 ```bash
   -pdb R_PDB     protonated pdbfile
   -s SEED        Chain:Resid,Chain:Resid
-  -c R_ATOM      atom info for each residue (eg. res_atom.dat)
+  -c R_ATOM      atom info for each residue (eg. res_atom.dat or res_atom-5.00.dat, etc.)
   -model METHOD  generate one or all trimmed models, if "7" is given, then
                  will generate the 7th model
 ```
