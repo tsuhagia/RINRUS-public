@@ -9,7 +9,7 @@ Residue Interaction Network-based ResidUe Selector (RINRUS) is a QM-cluster mode
 Clone this repository, then add the library code under `lib3` to your `PYTHONPATH`. For example, in `~/git`:
 ``` bash
 cd ~/git
-git clone git@github.com:natedey/RINRUS-public.git
+git clone git@github.com:natedey/RINRUS.git
 export PYTHONPATH="~/git/RINRUS/lib3:$PYTHONPATH"
 ```
 
