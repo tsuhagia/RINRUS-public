@@ -78,7 +78,7 @@ python3 $HOME/git/RINRUS/bin/pymol_scripts.py -resids "300,301,302" -pdbfilename
 
 Note: To properly loop pymol_script.py over all possible models, you will have to write a bash or python script to loop. An example of a bash loop is given here:
 ```bash
-ls -lrt| grep -v slurm |awk '{print $9}'|grep -E _atom_info |cut -c 5-6 |cut -d_ -f1>list; mkdir pdbs; for i in `cat list`; do mkdir model-${i}-01; cd model-${i}-01; mv ../res_${i}.pdb .;mv ../res_${i}_atom_info.dat  .;mv ../res_${i}_froz_info.dat .; python3 ~/git/RINRUS/bin/pymol_scripts.py -resids "300,301,302" -pdbfilename *.pdb; cp *_h.pdb model-${i}_h.pdb; cp model-${i}_h.pdb ../pdbs/ ; cd ..; done
+ls -lrt |awk '{print $9}'|grep -E _atom_info |cut -c 5-6 |cut -d_ -f1>list; mkdir pdbs; for i in `cat list`; do mkdir model-${i}-01; cd model-${i}-01; mv ../res_${i}.pdb .;mv ../res_${i}_atom_info.dat  .;mv ../res_${i}_froz_info.dat .; python3 ~/git/RINRUS/bin/pymol_scripts.py -resids "300,301,302" -pdbfilename *.pdb; cp *_h.pdb model-${i}_h.pdb; cp model-${i}_h.pdb ../pdbs/ ; cd ..; done
 ```
 
 11. Run `write_input.py` for a single model to generate an input file for quantum chemistry packages. You will have to loop this with python or a shell script to iterate over all possible models. Simple DFT/xTB templates are included:
